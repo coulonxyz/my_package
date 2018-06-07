@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "43496f63dc86086e6c4f98e409891c4b21e56f8ca50c1b3612d683697cd7fdaf"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "my-package": {
+            "editable": true,
+            "git": "https://github.com/coulonxyz/my_package.git"
+        }
+    },
+    "develop": {}
+}

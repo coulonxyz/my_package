@@ -1,5 +1,20 @@
 from setuptools import setup
 
-setup(name='helloer',
-      version='0.3',
-      description='hello hello')
+
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
+
+setup(name='my_funniest',
+      version='0.1',
+      description='The funniest joke in the world',
+      long_description=readme(),
+      license='coulon.xyz',
+      packages=['my_funniest'],
+      test_suite='nose.collector',
+      entry_points={
+          'console_scripts': ['funniest-joke=funniest.command_line:main'],
+      },
+      include_package_data=True,
+      zip_safe=False)
