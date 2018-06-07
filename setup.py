@@ -1,5 +1,5 @@
 from setuptools import setup
 
-setup(name='my_package',
-      version='0.2',
+setup(name='juliencoo',
+      version='0.3',
       description='hello hello')
